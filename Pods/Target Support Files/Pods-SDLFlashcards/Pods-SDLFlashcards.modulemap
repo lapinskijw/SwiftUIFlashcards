@@ -1,0 +1,6 @@
+framework module Pods_SDLFlashcards {
+  umbrella header "Pods-SDLFlashcards-umbrella.h"
+
+  export *
+  module * { export * }
+}
