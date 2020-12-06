@@ -16,6 +16,7 @@
 		104E57A324854B5400E9432A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104E57A224854B5400E9432A /* Preview Assets.xcassets */; };
 		104E57A624854B5400E9432A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104E57A424854B5400E9432A /* LaunchScreen.storyboard */; };
 		104E57B12485550900E9432A /* FlashcardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E57B02485550900E9432A /* FlashcardSet.swift */; };
+		1ACA7217257A8A7E008E013C /* FlashcardSetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA7216257A8A7E008E013C /* FlashcardSetRow.swift */; };
 		4555C8E213A642CE42BF1F98 /* Pods_SDLFlashcards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0150EE057A2E12DD2F39BD1F /* Pods_SDLFlashcards.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		104E57A524854B5400E9432A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		104E57A724854B5400E9432A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104E57B02485550900E9432A /* FlashcardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSet.swift; sourceTree = "<group>"; };
+		1ACA7216257A8A7E008E013C /* FlashcardSetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSetRow.swift; sourceTree = "<group>"; };
 		60514B9F5590AB453630262C /* Pods-SDLFlashcards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDLFlashcards.debug.xcconfig"; path = "Target Support Files/Pods-SDLFlashcards/Pods-SDLFlashcards.debug.xcconfig"; sourceTree = "<group>"; };
 		890C10424AB024D3679A0DF2 /* Pods-SDLFlashcards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDLFlashcards.release.xcconfig"; path = "Target Support Files/Pods-SDLFlashcards/Pods-SDLFlashcards.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				104E579924854B5000E9432A /* AppDelegate.swift */,
 				104E579B24854B5000E9432A /* SceneDelegate.swift */,
 				104E579D24854B5000E9432A /* ContentView.swift */,
+				1ACA7216257A8A7E008E013C /* FlashcardSetRow.swift */,
 				101845A62485E60800B0110F /* StudyView.swift */,
 				104E57B02485550900E9432A /* FlashcardSet.swift */,
 				101845A42485CEDE00B0110F /* BindableResults.swift */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				104E57B12485550900E9432A /* FlashcardSet.swift in Sources */,
+				1ACA7217257A8A7E008E013C /* FlashcardSetRow.swift in Sources */,
 				104E579A24854B5000E9432A /* AppDelegate.swift in Sources */,
 				104E579C24854B5000E9432A /* SceneDelegate.swift in Sources */,
 				101845A52485CEDE00B0110F /* BindableResults.swift in Sources */,

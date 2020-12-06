@@ -21,14 +21,15 @@ struct ContentView: View {
         NavigationView {
             List(flashcardSets.results) { flashcardSet in
                 NavigationLink(destination: StudyView(flashcardSet: flashcardSet)) {
-                    Text(flashcardSet.name)
+                    FlashcardSetRow(flashcardSet: flashcardSet)
                 }
             }
-            .navigationBarTitle("Flashcard Sets", displayMode: .inline)
+            .background(Color.clear)
+            .navigationBarTitle("Flashcard Sets", displayMode: .large)
             .navigationBarItems(trailing: Button(action: {
                 self.showingCreateSet.toggle()
             }, label: {
-                Text("Add Set")
+                Image("plus")
             })).sheet(isPresented: $showingCreateSet) {
                 CreateFlashCardSetView()
             }
