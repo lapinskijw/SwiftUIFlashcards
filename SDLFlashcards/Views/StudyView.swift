@@ -26,7 +26,7 @@ struct StudyView: View {
                 .navigationBarHidden(true)
                 .navigationBarTitle(Text(self.flashcardSet.name), displayMode: .inline)
                 .edgesIgnoringSafeArea([.top, .bottom])
-                .padding()
+                .padding(.leading, 20)
                 .frame(width: geometry.size.width)
             }
         }
@@ -48,13 +48,13 @@ struct FlippinRectangle: View {
                         .rotation3DEffect(self.flipped ? Angle(degrees: 180) : Angle(degrees: 0), axis: (x:CGFloat(0), y: CGFloat(10), z: CGFloat(0)))
                         .animation(.default)
                         .font(Font.title.weight(.bold))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(.white)
                 } else {
                     Text(questionText)
                         .rotation3DEffect(self.flipped ? Angle(degrees: 180) : Angle(degrees: 0), axis: (x:CGFloat(0), y: CGFloat(10), z: CGFloat(0)))
                         .animation(.default)
                         .font(Font.title.weight(.bold))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(.white)
                 }
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 400)

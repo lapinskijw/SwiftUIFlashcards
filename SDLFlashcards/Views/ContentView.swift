@@ -19,17 +19,21 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List(flashcardSets.results) { flashcardSet in
-                NavigationLink(destination: StudyView(flashcardSet: flashcardSet)) {
-                    FlashcardSetRow(flashcardSet: flashcardSet)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 10) {
+                    ForEach(flashcardSets.results) { flashcardSet in
+                        FlashcardSetRow(flashcardSet: flashcardSet)
+                    }
                 }
             }
-            .background(Color.clear)
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             .navigationBarTitle("Flashcard Sets", displayMode: .large)
             .navigationBarItems(trailing: Button(action: {
                 self.showingCreateSet.toggle()
             }, label: {
                 Image("plus")
+                    .renderingMode(.template)
+                    .foregroundColor(.blue)
             })).sheet(isPresented: $showingCreateSet) {
                 CreateFlashCardSetView()
             }

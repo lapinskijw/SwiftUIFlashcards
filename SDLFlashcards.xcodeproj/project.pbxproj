@@ -73,11 +73,9 @@
 			children = (
 				104E579924854B5000E9432A /* AppDelegate.swift */,
 				104E579B24854B5000E9432A /* SceneDelegate.swift */,
-				104E579D24854B5000E9432A /* ContentView.swift */,
-				1ACA7216257A8A7E008E013C /* FlashcardSetRow.swift */,
-				101845A62485E60800B0110F /* StudyView.swift */,
-				104E57B02485550900E9432A /* FlashcardSet.swift */,
-				101845A42485CEDE00B0110F /* BindableResults.swift */,
+				1A93477D257D2EA300F4158C /* Views */,
+				1A93477E257D2EB400F4158C /* Models */,
+				1A93477F257D2EFF00F4158C /* Helpers */,
 				104E579F24854B5400E9432A /* Assets.xcassets */,
 				104E57A424854B5400E9432A /* LaunchScreen.storyboard */,
 				104E57A724854B5400E9432A /* Info.plist */,
@@ -92,6 +90,32 @@
 				104E57A224854B5400E9432A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A93477D257D2EA300F4158C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				104E579D24854B5000E9432A /* ContentView.swift */,
+				1ACA7216257A8A7E008E013C /* FlashcardSetRow.swift */,
+				101845A62485E60800B0110F /* StudyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A93477E257D2EB400F4158C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				104E57B02485550900E9432A /* FlashcardSet.swift */,
+				101845A42485CEDE00B0110F /* BindableResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A93477F257D2EFF00F4158C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BA3C22C32F54F330E11CCB9B /* Pods */ = {
