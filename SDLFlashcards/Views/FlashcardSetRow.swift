@@ -17,7 +17,6 @@ struct FlashcardSetRow: View {
             Text(flashcardSet.name)
                 .font(.system(size: 30, weight: .bold))
                 .foregroundColor(.white)
-            Spacer()
             Text("\(flashcardSet.cards.count) Cards")
                 .font(.system(size: 20))
                 .foregroundColor(.white)
@@ -28,9 +27,7 @@ struct FlashcardSetRow: View {
                         .renderingMode(.template)
                         .foregroundColor(.white)
                 }
-                
                 Spacer()
-                
                 NavigationLink(
                     destination: StudyView(flashcardSet: flashcardSet),
                     label: {
@@ -42,7 +39,7 @@ struct FlashcardSetRow: View {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 25, alignment: .leading)
         }
         .padding()
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 120, alignment: .leading)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 140, alignment: .leading)
         .background(Color.blue)
         .cornerRadius(8)
     }
